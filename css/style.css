@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+}
+
+/* Main section */
+
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card section */
+
+.card {
+    background-color: white;
+    width: 32.7rem;
+    height: 63rem;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    margin-top: 3.8rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    
+}
+
+.card-text {
+    margin: 0rem;
+    padding: 0rem 1.7rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    color: hsl(224, 23%, 55%);
+}
+
+.card-plan-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 27.7rem;
+    height: 8rem;
+    margin-top: 2.8rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1.6rem;
+}
+
+.card-plan-section img {
+    grid-column: 1 / 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.plan-details{
+    grid-column: 2 / 3;
+}
+
+.plan-title {
+    margin-top: 2rem;
+    margin-bottom: .8rem;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: hsl(223, 47%, 23%);
+}
+
+.plan-cost {
+    font-size: 1.3rem;
+    color: hsl(224, 23%, 55%);
+    margin: 0rem;
+}
+
+.card-plan-section a {
+    grid-column: 3 / -1;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    justify-self: center;
+    align-self: center;
+}
+
+.card-plan-section a:hover{
+    color: rgba(56, 41, 224, .6);
+    text-decoration: none;
+}
+
+/* Button section */
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.4rem;
+}
+
+.btn {
+    width: 27.9rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.payment-btn {
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 1.6rem;
+    box-shadow: 0rem 1rem 2rem rgba(56, 41, 224, .3);
+    color: white;
+    height: 5rem;
+    margin-bottom: 2.9rem;
+}
+
+.payment-btn:hover {
+    background-color: rgba(56, 41, 224, .6);
+}
+
+.cancel-btn {
+    background: none;
+    border:none;
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn:hover {
+    color: black;
+}
+
+/* Footer */
+
+.attribution { 
+    font-size: 1.3rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    font-size: 1.3rem; 
+}
+
+@media only screen and (min-width:768px){
+    
+    body{
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+    }
+
+    .card {
+        width: 45rem;
+        height: 69.7rem;
+    }
+
+    .card-body {
+        padding: 5.4rem 4.8rem 5.4rem 4.8rem;
+    }
+
+    .card-title{
+        margin: auto auto 2rem auto;
+        font-size: 3rem;
+    }
+
+    .card-text{
+        line-height: 2.5rem;
+    }
+
+    .card-plan-section {
+        width: 100%;
+        height: 9.8rem;
+    }
+
+    .card-plan-section a {
+        font-size: 1.5rem;
+    }
+
+    .plan-title {
+        margin-top: 2.9rem;
+        margin-bottom: .6rem;
+        font-size: 1.7rem;
+    }
+
+    .plan-cost {
+        margin-top: 0rem;
+        font-size: 1.7rem;
+    }
+
+    .btn {
+        width: 35.4rem;
+        font-size: 1.5rem;
+    }
+}
